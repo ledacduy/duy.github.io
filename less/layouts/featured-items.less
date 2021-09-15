@@ -1,0 +1,113 @@
+//featured-items
+.featured-items {
+    padding-top: 43px;
+    
+    .title {
+        padding-top: 30px;
+        padding-bottom: 50px;
+        h5 {
+            color: @hover-color;
+            text-transform: uppercase;
+            font-family: @font;
+            font-weight: bold;
+            font-size: 12px;
+            letter-spacing: 7px;
+        }
+        h3 {
+            text-transform: uppercase;
+            font-family: @font;
+            font-weight: bold;
+            font-size: 24px;
+            padding-top: 20px;
+        }
+        #line {
+            padding-top: 15px;
+        }
+    }
+    .items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .featured-items-detail {
+            width: 260px;
+            .img-item {
+                position: relative;
+            }
+           
+            #item1 {
+                background: @wh url(../images/watch.png) no-repeat right top;
+                height: 320px;
+                
+            }
+            #item2 {
+                background: @wh url(../images/woman.png) no-repeat right top;
+                height: 320px;
+            }
+            #item3 {
+                background: @wh url(../images/bag.png) no-repeat right top;
+                height: 320px;
+            }
+            #item4 {
+                background: @wh url(../images/woman2.png) no-repeat right top;
+                height: 320px;
+            }
+            #item5 {
+                background: @wh url(../images/man.png) no-repeat right top;
+                height: 320px;
+            }
+            #item6 {
+                background: @wh url(../images/sandal.png) no-repeat right top;
+                height: 320px;
+            }
+            #item7 {
+                background: @wh url(../images/woman3.png) no-repeat right top;
+                height: 320px;
+            }
+            #item8 {
+                background: @wh url(../images/bag2.png) no-repeat right top;
+                height: 320px;
+            }
+            .detail {
+                padding-top: 10px;
+                // padding-bottom: 20px;
+                h5 {
+                    font-family: 'Open Sans', sans-serif;
+                    font-weight: bold;
+                    font-size: 14px;
+                    line-height: 26px;
+                }
+                
+                .price {
+                    padding-top: 10px;
+                    padding-bottom: 50px;
+                    font-family: 'Open Sans', sans-serif;
+                    font-size: 16px;
+                    color: @hover-color;
+                    span {
+                        color: #999999;
+                        text-decoration: line-through;
+                        font-weight: normal;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//responsive
+@media (max-width: 1173px){
+   
+    .featured-items {
+        .title {
+            display: block;
+            padding-left: 30px;
+        }
+    }
+ }
+
+@media (max-width: 960px){
+    .featured-items {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}

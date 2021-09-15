@@ -1,0 +1,113 @@
+//advertisement
+.ads {
+    display: flex;
+    justify-content: space-between;
+    height: 560px;
+    margin-top: 30px;
+    
+
+    #ad1 {
+        background: @wh url(../images/banner1.png) no-repeat right top;
+        width: 753px;
+        position: relative;
+        h3 {
+            position: absolute;
+            font-family: 'Pacifico', sans-serif;
+            font-size: 30px;
+            bottom: 200px;
+            right: 87px;
+            color: @bl;
+        }
+        
+    }
+    #ad2 {
+        background: @wh url(../images/banner2.png) no-repeat right top;
+        width: 360px;
+        height: 200px;
+        position: relative;
+        h3 {
+            position: absolute;
+            bottom: 76px;
+            left: 57px;
+            color: @bl;
+            text-transform: uppercase;
+            span:first-child {
+                display: block;
+                font-family: @font;
+                font-weight: bold;
+                font-size: 16px;
+                color: #616161;
+                text-transform: uppercase;
+            }
+            span:last-child {
+                display: block;
+                font-family: @font;
+                font-weight: 700;
+                font-size: 20px;
+                color: @bl;
+                text-transform: uppercase;
+            }
+        }
+        
+    }
+    #ad3 {
+        background: @wh url(../images/banner3.png) no-repeat right top;
+        width: 360px;
+        height: 330px;
+        margin-top: 30px;
+        position: relative;
+        h3 {
+            position: absolute;
+            font-size: 30px;
+            top: 123px;
+            left: 40px;
+            color: @bl;
+            span:first-child {
+                display: block;
+                font-family: @font;
+                font-weight: bold;
+                font-size: 16px;
+                color: #616161;
+                text-transform: uppercase;
+            }
+            span:last-child {
+                display: block;
+                font-family: @font;
+                font-weight: 700;
+                font-size: 20px;
+                color: @bl;
+                text-transform: uppercase;
+            }
+        }
+        
+    }
+}
+
+//responsive
+@media (max-width: 1060px){
+    .ads {
+        margin-top: 70px;
+        margin-bottom: 570px;
+        flex-wrap: wrap;
+        padding-left: 350px;
+        #ad1 {
+            margin-left: -300px;
+             width: 860px;
+             height: 600px;
+        }
+    }
+}
+
+@media (max-width: 960px){
+    .ads {
+        margin-top: 70px;
+        margin-bottom: 570px;
+        flex-wrap: wrap;
+        padding-left: 300px;
+        #ad1 {
+            margin-left: -300px;
+             width: 860px;
+             height: 600px;
+        }
+    }
+}

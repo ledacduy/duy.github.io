@@ -1,0 +1,67 @@
+footer {
+    background-color: @bl;
+    color:@wh;
+    .hr {
+        border-top: 1px solid #838383;
+    }
+    #contact {
+        height: 346px;
+        display: flex;
+        padding-top: 63px;
+        justify-content: space-between;
+        .info {
+            width: 317px;
+            
+            li {
+                padding-bottom: 14px;
+                a {
+                    color: #838383;
+                    &:hover {
+                        color: @wh;
+                        text-decoration: underline;
+                    }
+                }
+            }
+            
+            .title {
+                font-family: @font;
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 21.6px;
+                letter-spacing: 2px;
+                padding-bottom: 30px;
+            }
+            .content {
+                font-family: 'Open Sans', sans-serif;
+                font-size: 14px;
+                line-height: 22px;
+                color: #838383;
+                padding-top: 20px;
+            }
+            .social {
+                color: #828282;
+                letter-spacing: 15px;
+                padding-top: 75px;
+            }
+        }
+        #contact-list {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 30px;
+        }
+        #info-3 {
+            .content {
+                div {
+                    padding-bottom: 10px;
+                    i {
+                        padding-right: 10px;
+                    }
+                    div {
+                        padding-left: 29px;
+                    }
+                }
+               
+            }
+        }
+    }
+}
